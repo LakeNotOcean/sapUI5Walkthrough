@@ -1,1 +1,1 @@
-# sapUI5Walkthrough
+# sapUI5 Test Repository
