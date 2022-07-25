@@ -3,9 +3,10 @@ sap.ui.define(
   function (Controller, MessageToast) {
     "use strict";
     return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
-      onShowHello: function () {
+      onShowHello: function (oEvent) {
+        const sButtonText = oEvent.getSource().getText();
         // show a native JavaScript alert
-        MessageToast.show("Hello");
+        MessageToast.show("Button Text: " + sButtonText);
       },
     });
   }
