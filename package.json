@@ -1,5 +1,22 @@
 {
   "devDependencies": {
     "@ui5/cli": "^2.14.9"
-  }
+  },
+  "name": "sapui5walkthrough",
+  "description": "sapui5 test project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LakeNotOcean/sapUI5Walkthrough.git"
+  },
+  "author": "Nevsky Vladislav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LakeNotOcean/sapUI5Walkthrough/issues"
+  },
+  "homepage": "https://github.com/LakeNotOcean/sapUI5Walkthrough#readme"
 }
