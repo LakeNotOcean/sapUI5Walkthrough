@@ -4,26 +4,7 @@
          <pages>
             <Page title="{i18n>homePageTitle}">
                <content>
-                  <Panel headerText="{i18n>helloPanelTitle}" expandable="true" class="sapUiResponsiveMargin firstPanel" width="auto" expanded="true">
-                     <content>
-
-                        <Button class="myCustomButton" text="{i18n>showHelloButtonText}" press=".onShowHello" width="100px" />
-                        <Input value="{/recipient/name}" description="{i18n>helloInputText} {/recipient/name}" valueLiveUpdate="true" width="60%" />
-                        <Input value="{/recipient/surname}" description="{i18n>helloInputText} {/recipient/surname}" valueLiveUpdate="true" width="60%" />
-                        <FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
-
-                     </content>
-                  </Panel>
-                  <Panel headerText="{i18n>helloPanelTitle}" expandable="true" class="sapUiResponsiveMargin" width="auto" expanded="true">
-                     <content>
-
-                        <Button class="myCustomButton" text="{i18n>showHelloButtonText}" press=".onShowHello" width="100px" />
-                        <Input value="{/recipient/name}" description="{i18n>helloInputText} {/recipient/name}" valueLiveUpdate="true" width="60%" />
-                        <Input value="{/recipient/surname}" description="{i18n>helloInputText} {/recipient/surname}" valueLiveUpdate="true" width="60%" />
-                        <FormattedText htmlText="Hello {/recipient/name}" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
-
-                     </content>
-                  </Panel>
+                  <mvc:XMLView viewName="sap.ui.demo.walkthrough.view.HelloPanel" />
                </content>
 
                <footer>
