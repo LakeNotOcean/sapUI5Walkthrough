@@ -1,7 +1,10 @@
 <mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" controllerName="sap.ui.demo.walkthrough.controller.InvoiceList">
 
     <List headerText="{i18n>invoiceListTitle}" class="sapUiResponsiveMargin" width="auto" items="{path:'invoice>/Invoices',
-        filter:[{path:'Status', operator:'EQ', value1:'A'}]}" id="invoiceList">
+        filter:[{path:'City', operator:'EQ', value1:'Berlin'}],
+        sorter: {
+            path : 'ShipperName',
+            group : true}}" id="invoiceList">
         <headerToolbar>
             <Toolbar>
                 <Title text="{i18n>invoiceListTitle}" />
