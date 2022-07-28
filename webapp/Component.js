@@ -24,6 +24,7 @@ sap.ui.define(
 
         const oModel = new JSONModel(oData);
         this.setModel(oModel);
+        this.getRouter().initialize();
         // set i18n model on view
         const i18nModel = new ResourceModel({
           bundleName: "sap.ui.demo.walkthrough.i18n.i18n",
